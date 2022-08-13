@@ -5,7 +5,7 @@ import PageContainer from '../components/PageContainer'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="app flex justify-center">
+    <div className="app flex sm:justify-center">
       <Navigations />
       <PageContainer>
         <Component {...pageProps} />

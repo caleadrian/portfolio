@@ -3,14 +3,16 @@ import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import About from "../components/About";
 import Experience from "../components/Experience";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
-    <>
-      <div id="home" className="pt-36 sm:pt-48 pb-60 sm:pb-40 text-center">
+    <div className="snap-y snap-mandatory ">
+      <div id="home" className="snap-start pt-36 sm:pt-48 pb-60 sm:pb-40 text-center sm:h-screen">
         <div className="text-sm font-medium mb-2">Hello I&apos;m</div>
         <div className="text-6xl font-thin mb-1">Cale Adrian Lacson</div>
-        <div className="text-[#4db5ff] text-sm font-medium">Software Engineer</div>
+        <div className="text-[#4db5ff] font-medium">Software Engineer</div>
 
         <div className="mt-3">
           <a href="https://www.linkedin.com/in/cale-adrian/" target="_blank" rel="noreferrer" className="font-semibold inline-flex items-center rounded mr-3">
@@ -36,132 +38,8 @@ export default function Home() {
 
       <About />
       <Experience />
-
-
-
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div id="experience">Experience</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div id="portfolio">Porfolio</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div id='contact'>Contact</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-    </>
+      <Projects />
+      <Contact />
+    </div>
   )
 }
