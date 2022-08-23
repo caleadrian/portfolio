@@ -34,7 +34,7 @@ function About() {
                         I&apos;m an experienced Software Engineer with 4 years of hands-on experience in identifying web-based user interactions along with designing & implementing highly responsive user interface components by deploying Javascript concepts. Proficiency in translating designs & wireframes into high-quality code, and writing application interfaces via Javascript, Angular2+ and ReactJS workflows. Adept at monitoring & maintaining front-end performance and troubleshooting.
                     </div>
                     <Link href='#contact'>
-                        <button className="w-44 border border-[#4db5ff] bg-[#4db5ff] font-semibold text-gray-900 py-2.5 px-8 rounded-full hover:bg-white hover:text-gray-900 hover:border-white transition-all duration-500" type="button">
+                        <button className="w-44 bg-gradient-to-t from-orange-400 to-yellow-400 font-semibold text-[#f3f3f3] py-2.5 px-8 rounded-lg focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39]" type="button">
                             Hire me?
                         </button>
                     </Link>

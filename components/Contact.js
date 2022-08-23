@@ -5,15 +5,14 @@ import Script from 'next/script';
 
 function Contact() {
     return (
-        <div id='contact' className='snap-start pt-5 sm:pt-36 text-center px-0 sm:px-0  sm:h-screen'>
-            <Script src="https://www.google-analytics.com/analytics.js" />
+        <div id='contact' className='snap-start pt-5 sm:pt-36 text-center px-0 sm:px-0 sm:h-screen mb-20'>
             <div className='text-center'>
-                <div className='text-xs font-medium text-gray-500 mb-1'>My tech powers</div>
-                <div className='text-[#4db5ff] text-2xl'>Experience & <span className='text-orange-400'>Skills</span></div>
+                <div className='text-xs font-medium text-gray-500 mb-1'>What&apos;s poppin?</div>
+                <div className='text-[#4db5ff] text-2xl'>Let&apos;s discuss</div>
             </div>
 
-            <div className='flex mt-10 justify-center space-x-5'>
-                <div className='h-52 w-52 md:h-60 md:w-60 mb-12 sm:mr-10 md:mb-0 rounded-3xl bg-gradient-to-tr from-orange-400 to-slate-600'>
+            <div className='flex mt-16 lg:mt-10 items-center lg:justify-center flex-col lg:flex-row space-y-5 lg:space-x-5'>
+                <div className='h-52 w-52 lg:h-60 lg:w-60 mb-5 sm:mr-10 lg:mb-0 rounded-3xl bg-gradient-to-tr from-orange-400 to-slate-600'>
                     <div>
                         <div className='-rotate-12 hover:rotate-0 transition-all duration-300 z-0'>
                             <Image src={avatar} alt='cale is waving' className='rounded-3xl' />
@@ -21,8 +20,16 @@ function Contact() {
                     </div>
                 </div>
 
-                <div className='bg-white bg-opacity-5 w-7/12 rounded-md'>
+                <div className='bg-white bg-opacity-5 backdrop-blur-sm max-w-lg w-full rounded-lg'>
+                    <div className='flex py-5 gap-2 px-5'>
+                        <div className='bg-red-600 h-2 w-2 rounded-full'></div>
+                        <div className='bg-yellow-500 h-2 w-2 rounded-full'></div>
+                        <div className='bg-green-700 h-2 w-2 rounded-full'></div>
+                    </div>
+                    <div className='h-[1px] w-full bg-white relative bg-opacity-10'></div>
+
                     <form
+                        className='px-5 py-5'
                         name='contact'
                         method='post'
                         data-netlify='true'
@@ -36,23 +43,25 @@ function Contact() {
                             <input name='bot-field' />
                         </div>
 
-                        <div className='flex flex-col gap-y-2'>
-                            <div>
-                                <label>Name</label>
-                                <input className='text-black' type='text' name='name' required />
+                        <div className='flex flex-col gap-y-4'>
+                            <div className='flex flex-col items-start gap-1'>
+                                <label htmlFor='name' className='text-xs'>Name</label>
+                                <input className='w-full text-black rounded-sm py-1 px-2 focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39] focus:bg-gray-200' type='text' id='name' name='name' required />
                             </div>
 
-                            <div>
-                                <label>Email</label>
-                                <input className='text-black' type='email' name='name' required />
+                            <div className='flex flex-col items-start gap-1'>
+                                <label htmlFor='email' className='text-xs'>Email</label>
+                                <input className='w-full text-black rounded-sm py-1 px-2 focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39] focus:bg-gray-200' type='email' id='email' name='email' required />
                             </div>
 
-                            <div>
-                                <label>Message</label>
-                                <textarea className='text-black' name='message' required></textarea>
+                            <div className='flex flex-col items-start gap-1'>
+                                <label htmlFor='message' className='text-xs'>Message</label>
+                                <textarea rows={4} className='text-sm py-1 px-2 w-full rounded-sm text-black focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39] focus:bg-gray-200' id='message' name='message' required></textarea>
                             </div>
 
-                            <button type='submit'>Submit</button>
+                            <div className='flex justify-end mt-4'>
+                                <button className='bg-gradient-to-t from-orange-400 to-yellow-400 text-[#f3f3f3] p-1.5 rounded-lg w-44 text-sm font-semibold focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39]' type='submit'>Submit</button>
+                            </div>
                         </div>
 
 

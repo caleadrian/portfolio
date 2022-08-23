@@ -40,7 +40,7 @@ function Projects() {
 
             <div className='flex flex-col lg:flex-row lg:items-start lg:space-x-5 lg:space-y-0 mt-10 space-y-5'>
                 {Projects.map((item, i) => (
-                    <div key={i} className='bg-white p-4 rounded-md bg-opacity-5 backdrop-blur-0 w-full lg:w-3/6'>
+                    <div key={i} className='bg-white bg-opacity-5 backdrop-blur-sm p-4 rounded-md w-full lg:w-3/6'>
                         <div className='mb-2 text-lg'>{item.title}</div>
                         <div className='flex justify-start space-x-5'>
                             <div className='w-36 h-36 rounded-md overflow-hidden flex-shrink-0'>
