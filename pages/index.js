@@ -7,6 +7,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
 export default function Home() {
+
   return (
     <div className="snap-y snap-mandatory ">
       <div id="home" className="snap-start pt-36 sm:pt-48 pb-60 sm:pb-40 text-center sm:h-screen">
@@ -25,9 +26,12 @@ export default function Home() {
         </div>
 
         <div className="mt-10">
-          <button className="border border-[#4db5ff] font-semibold text-[#4db5ff] py-2.5 px-8 rounded-full mr-3 hover:bg-white hover:text-gray-900 hover:border-white transition-all duration-500" type="button">
+          <a href="../resources/files/CALE_LACSON_2022.pdf" download target="_blank" rel="noopener noreferrer" ><button>Download CV</button></a>
+
+          {/* <a href="api/hello"
+            alt="alt text" className="border border-[#4db5ff] font-semibold text-[#4db5ff] py-2.5 px-8 rounded-full mr-3 hover:bg-white hover:text-gray-900 hover:border-white transition-all duration-500">
             Download CV
-          </button>
+          </a> */}
           <Link href='#contact'>
             <button className="border border-[#4db5ff] bg-[#4db5ff] font-semibold text-gray-900 py-2.5 px-8 rounded-full hover:bg-white hover:text-gray-900 hover:border-white transition-all duration-500" type="button">
               Let&apos;s talk

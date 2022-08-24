@@ -46,12 +46,12 @@ function Contact() {
                         <div className='flex flex-col gap-y-4'>
                             <div className='flex flex-col items-start gap-1'>
                                 <label htmlFor='name' className='text-xs'>Name</label>
-                                <input className='w-full text-black rounded-sm py-1 px-2 focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39] focus:bg-gray-200' type='text' id='name' name='name' required />
+                                <input className='w-full text-black rounded-sm py-1.5 px-2 focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39] focus:bg-gray-200 text-sm' type='text' id='name' name='name' required />
                             </div>
 
                             <div className='flex flex-col items-start gap-1'>
                                 <label htmlFor='email' className='text-xs'>Email</label>
-                                <input className='w-full text-black rounded-sm py-1 px-2 focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39] focus:bg-gray-200' type='email' id='email' name='email' required />
+                                <input className='w-full text-black rounded-sm py-1.5 px-2 focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39] focus:bg-gray-200 text-sm' type='email' id='email' name='email' required />
                             </div>
 
                             <div className='flex flex-col items-start gap-1'>

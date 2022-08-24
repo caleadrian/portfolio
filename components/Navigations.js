@@ -51,7 +51,7 @@ export default function Header() {
                         <AtSymbolIcon className="h-5 w-5 text-white" />
                     </li>
                 </Link>
-                <Link href='/blog'>
+                {/* <Link href='/blog'>
                     <li title="Story" className={setActiveClass('/blog') + "transition-all duration-500 cursor-pointer p-3 rounded-full border-0"}>
                         <EyeIcon className="h-5 w-5 text-white" />
                     </li>
@@ -60,7 +60,7 @@ export default function Header() {
                     <li title="Master" className={setActiveClass('/master') + "transition-all duration-500 cursor-pointer p-3 rounded-full border-0"}>
                         <KeyIcon className="h-5 w-5 text-white" />
                     </li>
-                </Link>
+                </Link> */}
             </ul>
         </nav>
     );
