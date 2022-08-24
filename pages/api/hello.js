@@ -1,5 +1,5 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import request from 'request';
+const url = '../../public/files/CALE_LACSON_2022.pdf';
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
-}
+const handler = (_, res) => { request.get(url).pipe(res); }
+export default handler;
