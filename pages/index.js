@@ -10,8 +10,8 @@ export default function Home() {
 
 
   return (
-    <div className="snap-y snap-mandatory ">
-      <div id="home" className="snap-start pt-36 sm:pt-48 pb-60 sm:pb-40 text-center sm:h-screen">
+    <div className="flex flex-col py-28 px-10 sm:px-0 gap-56">
+      <div id="home" className=" text-center h-screen">
         <div className="text-sm font-medium mb-2">Hello I&apos;m</div>
         <div className="text-6xl font-thin mb-1">Cale Adrian Lacson</div>
         <div className="text-[#4db5ff] font-medium">Software Engineer</div>

@@ -5,14 +5,14 @@ import Script from 'next/script';
 
 function Contact() {
     return (
-        <div id='contact' className='snap-start pt-5 sm:pt-36 text-center px-0 sm:px-0 sm:h-screen mb-20'>
+        <div id='contact' className=''>
             <div className='text-center'>
                 <div className='text-xs font-medium text-gray-500 mb-1'>What&apos;s poppin?</div>
                 <div className='text-[#4db5ff] text-2xl'>Let&apos;s discuss</div>
             </div>
 
             <div className='flex mt-16 lg:mt-10 items-center lg:justify-center flex-col lg:flex-row space-y-5 lg:space-x-5'>
-                <div className='h-52 w-52 lg:h-60 lg:w-60 mb-5 sm:mr-10 lg:mb-0 rounded-3xl bg-gradient-to-tr from-orange-400 to-slate-600'>
+                <div className='h-48 w-48 lg:h-60 lg:w-60 mb-5 sm:mr-10 lg:mb-0 rounded-3xl bg-gradient-to-tr from-orange-400 to-slate-600'>
                     <div>
                         <div className='-rotate-12 hover:rotate-0 transition-all duration-300 z-0'>
                             <Image src={avatar} alt='cale is waving' className='rounded-3xl' />
@@ -59,7 +59,7 @@ function Contact() {
                             </div>
 
                             <div className='flex justify-end mt-4'>
-                                <button className='bg-gradient-to-t from-orange-400 to-yellow-400 text-[#f3f3f3] p-1.5 rounded-lg w-44 text-sm font-semibold focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39]' type='submit'>Submit</button>
+                                <button className='bg-gradient-to-t from-orange-400 to-yellow-400 text-[#f3f3f3] p-2 sm:p-1.5 rounded-lg w-44 sm:text-sm font-semibold focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39]' type='submit'>Submit</button>
                             </div>
                         </div>
 

@@ -18,7 +18,7 @@ function Projects() {
         {
             title: 'Typescript Todo List',
             img: todolist,
-            desc: 'A Todo List app overkilled with javascript frameworks 😂',
+            desc: 'A Todo List app with some javascript frameworks',
             techs: [
                 'ReactJS', 'Typescript', 'Redux', 'Framer', 'Tailwind'
             ],
@@ -32,7 +32,7 @@ function Projects() {
     }
 
     return (
-        <div id='projects' className='snap-start py-5 sm:pt-36 px-10 sm:px-0 sm:h-screen'>
+        <div id='projects' className=''>
             <div className='text-center '>
                 <div className='text-xs font-medium text-gray-500 mb-1'>Craft with 🧡</div>
                 <div className='text-[#4db5ff] text-2xl'>Personal Projects</div>
@@ -40,23 +40,24 @@ function Projects() {
 
             <div className='flex flex-col lg:flex-row lg:items-start lg:space-x-5 lg:space-y-0 mt-10 space-y-5'>
                 {Projects.map((item, i) => (
-                    <div key={i} className='bg-white bg-opacity-5 backdrop-blur-sm p-4 rounded-md w-full lg:w-3/6'>
-                        <div className='mb-2 text-lg'>{item.title}</div>
-                        <div className='flex justify-start space-x-5'>
+                    <div key={i} className='bg-white bg-opacity-5 backdrop-blur-sm px-4 rounded-md w-full lg:w-3/6'>
+                        <div className='my-5 text-lg font-semibold sm:font-normal'>{item.title}</div>
+                        <div className='h-[1px] w-full bg-white relative bg-opacity-10'></div>
+                        <div className='flex justify-start space-x-5 my-5'>
                             <div className='w-36 h-36 rounded-md overflow-hidden flex-shrink-0'>
                                 <Image src={item.img} alt='multiplayer tictactoe' className='hover:scale-150 transition-all duration-500' />
                             </div>
 
                             <div>
-                                <div className='text-sm'>
+                                <div className='sm:text-sm'>
                                     {item.desc}
                                 </div>
 
                                 <div className='mt-1'>
-                                    <button className='mt-2 border border-[#4db5ff] bg-[#4db5ff] text-white py-1 px-6 rounded-full hover:bg-white hover:text-gray-900 hover:border-white transition-all duration-500 text-xs mr-2' onClick={() => openLink(item.link)}>
+                                    <button className='mt-2 bg-gradient-to-t from-orange-400 to-yellow-400 text-white py-2 sm:py-1 px-8 sm:px-6 rounded-md text-sm mr-4 font-semibold focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39]' onClick={() => openLink(item.link)}>
                                         Demo
                                     </button>
-                                    <button className='mt-2 border border-white bg-transparent text-white py-1 px-6 rounded-full bg-white  hover:bg-white hover:text-black transition-all duration-500 text-xs' onClick={() => openLink(item.repo)}>
+                                    <button className='mt-2 border border-white bg-transparent text-white  py-2 sm:py-1 px-8 sm:px-6 rounded-md bg-white hover:bg-white hover:text-black text-sm font-semibold focus:outline-none focus:ring-4 focus:ring-offset-0 focus:ring-[#f7b02d39]' onClick={() => openLink(item.repo)}>
                                         Repo
                                     </button>
                                 </div>

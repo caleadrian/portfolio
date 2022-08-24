@@ -25,30 +25,30 @@ export default function Header() {
 
     return (
         <nav className="fixed bottom-3 flex justify-center w-full z-10">
-            <ul className="grid grid-flow-col gap-1 sm:gap-4 bg-white py-2 px-3 rounded-full bg-opacity-5 backdrop-blur-md">
+            <ul className="grid grid-flow-col gap-5 sm:gap-4 bg-white py-2 px-3 rounded-full bg-opacity-5 backdrop-blur-md">
                 <Link href='/'>
                     <li title="Home" className={setActiveClass('/') + "transition-all duration-500 cursor-pointer p-3 rounded-full border-0"}>
-                        <HomeIcon className="h-5 w-5 text-white" />
+                        <HomeIcon className="h-9 w-9 sm:h-5 sm:w-5 text-white" />
                     </li>
                 </Link>
                 <Link href='/#about'>
                     <li title="About" className={setActiveClass('/#about') + "transition-all duration-500 cursor-pointer p-3 rounded-full border-0"}>
-                        <UserIcon className="h-5 w-5 text-white" />
+                        <UserIcon className="h-9 w-9 sm:h-5 sm:w-5 text-white" />
                     </li>
                 </Link>
                 <Link href='/#experience'>
                     <li title="Experience" className={setActiveClass('/#experience') + "transition-all duration-500 cursor-pointer p-3 rounded-full border-0"}>
-                        <BriefcaseIcon className="h-5 w-5 text-white" />
+                        <BriefcaseIcon className="h-9 w-9 sm:h-5 sm:w-5 text-white" />
                     </li>
                 </Link>
                 <Link href='/#projects'>
                     <li title="Projects" className={setActiveClass('/#projects') + "transition-all duration-500 cursor-pointer p-3 rounded-full border-0"}>
-                        <SparklesIcon className="h-5 w-5 text-white" />
+                        <SparklesIcon className="h-9 w-9 sm:h-5 sm:w-5 text-white" />
                     </li>
                 </Link>
                 <Link href='/#contact'>
                     <li title="Contact" className={setActiveClass('/#contact') + "transition-all duration-500 cursor-pointer p-3 rounded-full border-0"}>
-                        <AtSymbolIcon className="h-5 w-5 text-white" />
+                        <AtSymbolIcon className="h-9 w-9 sm:h-5 sm:w-5 text-white" />
                     </li>
                 </Link>
                 {/* <Link href='/blog'>

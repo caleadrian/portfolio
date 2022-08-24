@@ -34,7 +34,7 @@ function Experience() {
         ,
         {
             company: 'Personal Development',
-            jd: 'Consequat elit ipsum ipsum deserunt labore nulla fugiat reprehenderit irure ad.',
+            jd: 'Loves working on web applications and creating unique UI designs.',
             techs: [
                 'ReactJS', 'NodeJS', 'Socket.IO', 'Tailwind', 'NextJS', 'Heroku'
             ]
@@ -42,7 +42,7 @@ function Experience() {
     ]
 
     return (
-        <div id='experience' className='snap-start py-5 sm:pt-36 px-10 sm:px-0 sm:h-screen'>
+        <div id='experience' className=''>
             <div className='text-center '>
                 <div className='text-xs font-medium text-gray-500 mb-1'>My tech powers</div>
                 <div className='text-[#4db5ff] text-2xl'>Experience & <span className='text-orange-400'>Skills</span></div>
